@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	background-color: #333;
+	font-size: 36px;
+	color: #fff;
+	overflow: hidden;
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 150px;
+	border-radius: 25px;
+    transform: translateX(-50%);
+	transition: .5s;
+}
+
+.btn {
+	font-family: 'Nunito', sans-serif;
+	width: 120px;
+	position: absolute;
+	top: 50px;
+	transform: translateX(-50%);
+	background-color: transparent;
+	font-weight: bold;
+	color: #fff;
+	border: 3px solid #fff;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+	transition: .5s;
+}
+
+.btn-zoom {
+	left: 30%;
+}
+
+.btn-move {
+	left: 60%;
+}
+
+.btn-color {
+	left: 90%;
+}
+
+.blue{
+	background-color: royalblue;
+	left: 30%;
+	box-shadow: 0px 0px 15px royalblue;
+	border: 2px solid rgb(31, 55, 129);
+}
+
+.red{
+	background-color: tomato;
+	left: 60%;
+	box-shadow: 0px 0px 15px tomato;
+	border: 2px solid rgb(159, 30, 16);
+
+}
+.green{
+	background-color: yellowgreen;
+	left: 90%;
+	box-shadow: 0px 0px 15px yellowgreen;
+	border: 2px solid rgb(84, 115, 21);
+}
+
+.btn-zoom:hover ~ .square{
+	width: 200px;
+	height: 200px;
+	top: 100px;
+}
+
+.btn-move:hover ~ .square{
+	top: 500px;;
+}
+
+.btn-color:hover ~.square{
+    background-color: #000;
+	border: 3px solid #fff;
+	box-shadow: 0px 0px 15px #000;
+}
+
+
